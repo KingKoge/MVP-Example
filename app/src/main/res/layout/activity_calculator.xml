@@ -6,6 +6,15 @@
     android:orientation="vertical"
     tools:context=".calculator.CalculatorActivity">
 
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="16dp"
+        android:text="0.00"
+        android:textSize="24dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
