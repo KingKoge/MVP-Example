@@ -22,22 +22,22 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
 
     @Override
     public int plusValue(int x, int y) {
-        return 0;
+        return x + y;
     }
 
     @Override
     public int minusValue(int x, int y) {
-        return 0;
+        return x - y;
     }
 
     @Override
     public int multiplyValue(int x, int y) {
-        return 0;
+        return x * y;
     }
 
     @Override
     public int divideValue(int x, int y) {
-        return 0;
+        return x / y;
     }
 
     @Override
