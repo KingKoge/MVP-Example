@@ -24,11 +24,11 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 public class CalculatorActivityTest {
 
     @Rule
-    ActivityTestRule<CalculatorActivity> activityTestRule;
+    public ActivityTestRule<CalculatorActivity> activityTestRule = new ActivityTestRule<>(CalculatorActivity.class);
 
     @Before
     public void setUp() {
-        activityTestRule = new ActivityTestRule<>(CalculatorActivity.class);
+
     }
 
     @Test
