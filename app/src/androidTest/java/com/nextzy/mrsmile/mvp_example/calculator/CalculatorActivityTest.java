@@ -77,4 +77,14 @@ public class CalculatorActivityTest {
         onView(withId(R.id.btn_nine)).check(matches(isDisplayed()));
     }
 
+    @Test
+    public void isVisibleButtonClear() {
+        onView(withId(R.id.btn_clear)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public void isVisibleButtonDot() {
+        onView(withId(R.id.btn_dot)).check(matches(isDisplayed()));
+    }
+
 }
