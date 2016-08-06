@@ -10,8 +10,6 @@ public class CalculatorContractor {
 
     interface Presenter extends BasePresenter {
 
-        CalculatorPresenter createPresenter(CalculatorContractor.View view);
-
         int plusValue(int x, int y);
 
         int minusValue(int x, int y);

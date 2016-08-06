@@ -14,7 +14,7 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
-        presenter.createPresenter(this);
+        presenter = CalculatorPresenter.createPresenter(this);
     }
 
     @Override

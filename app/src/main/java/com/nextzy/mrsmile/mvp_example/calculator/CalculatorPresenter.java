@@ -15,8 +15,7 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
         this.view = view;
     }
 
-    @Override
-    public CalculatorPresenter createPresenter(CalculatorContractor.View view) {
+    public static CalculatorPresenter createPresenter(CalculatorContractor.View view) {
         return new CalculatorPresenter(view);
     }
 
@@ -49,6 +48,4 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
     public void onStop() {
 
     }
-
-
 }
