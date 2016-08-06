@@ -7,6 +7,10 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
 
     private CalculatorContractor.View view;
 
+    protected CalculatorPresenter() {
+
+    }
+
     private CalculatorPresenter(CalculatorContractor.View view) {
         this.view = view;
     }
