@@ -105,6 +105,36 @@ public class CalculatorActivityTest {
     }
 
     @Test
+    public void isVisibleButtonOperatorPlus() {
+        onView(withId(R.id.btn_operator_plus)).check(matches(isDisplayed()));
+        onView(withId(R.id.btn_operator_plus)).check(matches(withText("+")));
+    }
+
+    @Test
+    public void isVisibleButtonOperatorMinus() {
+        onView(withId(R.id.btn_operator_minus)).check(matches(isDisplayed()));
+        onView(withId(R.id.btn_operator_minus)).check(matches(withText("-")));
+    }
+
+    @Test
+    public void isVisibleButtonOperatorMultiply() {
+        onView(withId(R.id.btn_operator_multiply)).check(matches(isDisplayed()));
+        onView(withId(R.id.btn_operator_multiply)).check(matches(withText("*")));
+    }
+
+    @Test
+    public void isVisibleButtonOperatorDivide() {
+        onView(withId(R.id.btn_operator_divide)).check(matches(isDisplayed()));
+        onView(withId(R.id.btn_operator_divide)).check(matches(withText("/")));
+    }
+
+    @Test
+    public void isVisibleButtonEquals() {
+        onView(withId(R.id.btn_operator_equals)).check(matches(isDisplayed()));
+        onView(withId(R.id.btn_operator_equals)).check(matches(withText("=")));
+    }
+
+    @Test
     public void isVisibleTextDisplay() {
         onView(withId(R.id.tv_display)).check(matches(isDisplayed()));
         onView(withId(R.id.tv_display)).check(matches(withText("0.00")));
