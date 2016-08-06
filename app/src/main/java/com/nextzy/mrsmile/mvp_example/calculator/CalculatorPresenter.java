@@ -1,5 +1,7 @@
 package com.nextzy.mrsmile.mvp_example.calculator;
 
+import android.view.View;
+
 /**
  * Created by nextzy on 8/6/2016 AD.
  */
@@ -17,6 +19,11 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
 
     public static CalculatorPresenter createPresenter(CalculatorContractor.View view) {
         return new CalculatorPresenter(view);
+    }
+
+    @Override
+    public void viewClick(View view) {
+
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.nextzy.mrsmile.mvp_example.calculator;
 
+import android.view.View;
+
 import com.nextzy.mrsmile.mvp_example.common.BasePresenter;
 import com.nextzy.mrsmile.mvp_example.common.BaseView;
 
@@ -9,6 +11,8 @@ import com.nextzy.mrsmile.mvp_example.common.BaseView;
 public class CalculatorContractor {
 
     interface Presenter extends BasePresenter {
+
+        void viewClick(android.view.View view);
 
         int plusValue(int x, int y);
 
