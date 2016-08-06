@@ -11,6 +11,14 @@ public class CalculatorContractor {
     interface Presenter extends BasePresenter {
 
         CalculatorPresenter createPresenter(CalculatorContractor.View view);
+
+        int plusValue(int x, int y);
+
+        int minusValue(int x, int y);
+
+        int multiplyValue(int x, int y);
+
+        int divideValue(int x, int y);
     }
 
     interface View extends BaseView<Presenter> {

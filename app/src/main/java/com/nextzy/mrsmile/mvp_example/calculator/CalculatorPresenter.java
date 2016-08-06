@@ -17,6 +17,26 @@ public class CalculatorPresenter implements CalculatorContractor.Presenter {
     }
 
     @Override
+    public int plusValue(int x, int y) {
+        return 0;
+    }
+
+    @Override
+    public int minusValue(int x, int y) {
+        return 0;
+    }
+
+    @Override
+    public int multiplyValue(int x, int y) {
+        return 0;
+    }
+
+    @Override
+    public int divideValue(int x, int y) {
+        return 0;
+    }
+
+    @Override
     public void onStart() {
 
     }
