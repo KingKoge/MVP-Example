@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.nextzy.mrsmile.mvp_example.R;
 
@@ -30,6 +31,8 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
 
     private Button btnDot;
     private Button btnClear;
+
+    private TextView tvDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,8 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
 
         btnDot = (Button) findViewById(R.id.btn_dot);
         btnClear = (Button) findViewById(R.id.btn_clear);
+
+        tvDisplay = (TextView) findViewById(R.id.tv_display);
     }
 
     private void setDefaultView() {
@@ -109,5 +114,15 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorC
     @Override
     public void onClick(View v) {
         presenter.viewClick(v);
+    }
+
+    @Override
+    public String getTextDisplay() {
+        return tvDisplay.getText().toString();
+    }
+
+    @Override
+    public void setTextDisplay(String text) {
+        tvDisplay.setText(text);
     }
 }
