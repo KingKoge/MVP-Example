@@ -25,5 +25,8 @@ public class CalculatorContractor {
 
     interface View extends BaseView<Presenter> {
 
+        String getTextDisplay();
+
+        void setTextDisplay(String text);
     }
 }
